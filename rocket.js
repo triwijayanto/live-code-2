@@ -45,9 +45,12 @@ function groupOddEven(students) {
       evens.push(students[i])
     }
   }
-
-  var stringOdds = odds.toString()
-  var stringEvens = evens.toString()
+  //tanpa spasi gunakan toString()
+  // var stringOdds = odds.toString(', ')
+  // var stringEvens = evens.toString(', ')
+  //dengan spasi gunakan join() 
+  var stringOdds = odds.join(', ')
+  var stringEvens = evens.join(', ')
   
   // console.log(stringOdds)
   // console.log(stringEvens)
